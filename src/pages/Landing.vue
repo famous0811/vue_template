@@ -3,8 +3,7 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-
+import { Vue } from "vue-class-component";
 export default class Landing extends Vue {}
 </script>
 
