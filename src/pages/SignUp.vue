@@ -1,4 +1,4 @@
-<template>
+<template lang="">
   <div></div>
 </template>
 <script lang="ts">
@@ -6,16 +6,16 @@ import { Options, Vue } from "vue-class-component";
 
 @Options({
   methods: {
-    signIn() {
+    signUp() {
       if (this.id === "" || this.password === "") return;
-      this.$store.dispatch("SIGN_IN", {
+      this.$store.dispatch("SIGN_UP", {
         userid: this.id,
         password: this.password,
       });
     },
   },
 })
-export default class Landing extends Vue {
+export default class Sigin extends Vue {
   data() {
     return {
       id: "",
@@ -24,4 +24,5 @@ export default class Landing extends Vue {
   }
 }
 </script>
+
 <style lang=""></style>
