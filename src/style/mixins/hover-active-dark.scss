@@ -1,0 +1,9 @@
+@mixin hover-active-dark {
+  &:hover {
+    background-color: $hover-dark-color;
+  }
+
+  &:active {
+    background-color: $active-dark-color;
+  }
+}
