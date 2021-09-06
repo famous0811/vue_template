@@ -3,4 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-createApp(App).use(router).use(store).mount("#app");
+const mixin = {
+  created() {
+    alert("mixin");
+  },
+};
+createApp({ App, mixins: [mixin] })
+  .use(router)
+  .use(store)
+  .mount("#app");
