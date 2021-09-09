@@ -1,10 +1,15 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <ModalComponent />
+  </div>
 </template>
 
-<script lang="ts">
-import { Vue } from "vue-class-component";
-
+<script>
+import { Vue, Options } from "vue-class-component";
+import ModalComponent from "@/components/assets/modal.vue";
+@Options({
+  components: { ModalComponent },
+})
 export default class Landing extends Vue {}
 </script>
 

@@ -2,13 +2,10 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-
-const mixin = {
-  created() {
-    alert("mixin");
-  },
-};
-createApp({ App, mixins: [mixin] })
-  .use(router)
-  .use(store)
-  .mount("#app");
+import "@iconify/iconify";
+// const mixin = {
+//   created() {
+//     alert("mixin");
+//   },
+// };
+createApp(App).use(router).use(store).mount("#app");
