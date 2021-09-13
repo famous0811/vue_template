@@ -1,17 +1,10 @@
-<template lang="">
+<template>
   <div></div>
 </template>
 <script lang="ts">
-@Options({
-  name: "exmaple",
-  props: {},
-  components: {},
-  methods: {},
-})
-export default class Layout extends Vue {
-  data() {
-    return {};
-  }
-}
+import { Vue, Options } from "vue-class-component";
+
+@Options({})
+export default class Layout extends Vue {}
 </script>
 <style lang="scss"></style>

@@ -1,7 +1,7 @@
 <template>
   <div class="modalWrap" @click.self="closeModal">
     <div class="modal" :style="{ width: width, height: height }">
-      <div class="modalBody">
+      <div class="modalBody" :style="rowColumn && 'flex-direction: column'">
         <div v-if="closeBtnShow" class="modalClose" @click="closeModal">
           <i class="iconify" data-icon="mdi:close" />
         </div>
@@ -25,6 +25,10 @@ import { Vue, Options } from "vue-class-component";
     closeBtnShow: {
       type: Boolean,
       default: true,
+    },
+    rowColumn: {
+      type: Boolean,
+      default: false,
     },
   },
 })

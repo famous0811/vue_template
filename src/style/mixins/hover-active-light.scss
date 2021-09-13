@@ -1,9 +1,0 @@
-@mixin hover-active-light {
-  &:hover {
-    background-color: $hover-light-color;
-  }
-
-  &:active {
-    background-color: $active-light-color;
-  }
-}

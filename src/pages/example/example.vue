@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <div>example.vue</div>
   </div>
@@ -6,16 +6,6 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
-@Options({
-  name: "exmaple",
-  props: {},
-  components: {},
-  methods: {},
-})
-export default class Example extends Vue {
-  data() {
-    return {};
-  }
-}
+export default class Example extends Vue {}
 </script>
 <style lang="scss"></style>
